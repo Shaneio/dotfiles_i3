@@ -1,0 +1,5 @@
+[user]
+	name = Shaneio
+	email = 44534398+Shaneio@users.noreply.github.com
+[core]
+	pager = diff-so-fancy | less --tabs=2 -RFX
