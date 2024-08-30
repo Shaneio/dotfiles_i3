@@ -143,7 +143,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # toggle between active and last active workspace
 workspace_auto_back_and_forth yes
 
-$ set firefox to occupy workspace 2
+# set firefox to occupy workspace 2
 assign [class="firefox" instance="Navigator"] $web
 
 # stops mouse from activating windown on hover
@@ -288,7 +288,7 @@ client.focused 		#333333 $black2 $white2 #285577
 client.focused_inactive #333333 $background $foreground #484e50
 client.unfocused 	#333333 #222222 #888888 #292d2e #222222
 client.urgent 		$red1 $red1 $white2 $red1 $red1
-client.placeholder 	#000000 #0c0c0c $white2 #000000 0c0c0c
+client.placeholder 	#000000 #0c0c0c $white2 #000000 #0c0c0c
 
 for_window [class="URxvt*"] border pixel 1
 
