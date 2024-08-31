@@ -299,10 +299,25 @@ for_window [class="URxvt*"] border pixel 1
 # Floating scratchpads
 #-------------------------------
 
-# Terminal scratchpad
+
+
+# Terminal scratchpad V1 (Disabled)
+# ----------------------------------------------------------------------------------
+# for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
+# bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
+# exec urxvtc -name urxvt_scratchpad
+
+# Terminal scratchpad V2 with tmux + three windows: 1. Terminal | 2.Neovim temp file
+# ----------------------------------------------------------------------------------
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
-exec urxvtc -name urxvt_scratchpad
+exec urxvtc -name urxvt_scratchpad \
+-e tmux -2 new-session -d -s scratchpad \; \
+new-window -n nvim 'nvim +e /tmp/nvim-tmp.md' \; \
+attach-session -d -t scratchpad
+
+
+
 
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, border none
