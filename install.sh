@@ -74,6 +74,12 @@ ln -sf "$DOTFILES/gitconfig" "$XDG_CONFIG_HOME/gitconfig"
 
 
 #########
+# Dunst #
+#########
+mkdir -p "$XDG_CONFIG_HOME/dunst"
+ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
+
+#########
 # Tmux  #
 #########
 
