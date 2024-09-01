@@ -6,7 +6,8 @@ Installed with Pacman
 tldr; man man-pages
 neovim
 xorg
-rxvt-unicode
+rxvt-unicode 
+(rxvt-unicode-truecolor-wide-glyphs patches above)
 i3-wm
 xorg-xinit
 ttf-dejavu
