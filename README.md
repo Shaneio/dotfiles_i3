@@ -6,9 +6,6 @@ Installed with Pacman
 tldr; man man-pages
 neovim
 xorg
-[--skip]rxvt-unicode
-[yay]rxvt-unicode-truecolor-wide-glyphs
-[yay]urxvt-tabbedex
 i3-wm
 xorg-xinit
 ttf-dejavu
@@ -28,6 +25,7 @@ htop
 zsh
 zsh-completions
 zsh-syntax-highlighting
+zsh-autosuggestions
 fzf
 ripgrep
 dunst libnotify
@@ -44,9 +42,13 @@ yay
 
 
 Installed with Yay
+rxvt-unicode-truecolor-wide-glyphs
 urxvt-tabbedex
 python-neovim
 ruby-neovim
+
+Not Installed (not patched)
+rxvt-unicode
 
 
 
