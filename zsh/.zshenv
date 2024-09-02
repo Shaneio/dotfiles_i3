@@ -21,3 +21,6 @@ export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/gitconfig"
 # fzf and ripgrep
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# NVM
+export NVM_DIR="$XDG_CONFIG_HOME/nvm"
